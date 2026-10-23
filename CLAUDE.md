@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Tirth Shah
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Tirth Shah, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +10,87 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
+Full detail lives in `.claude/skills/job-application-assistant/01-candidate-profile.md`; this is the summary.
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Tirth Shah
+- **Location:** India (open to relocation within India and abroad, and to remote roles; roles outside India need visa sponsorship)
+- **Contact:** +91-9377461119 | shahtirth0212@gmail.com | linkedin.com/in/shahtirthhh | github.com/shahtirthhh | tirthcodes.dev
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
+  | English | Fluent / professional |
+  | Hindi | Fluent |
+  | Gujarati | Native |
+  <!-- An undeclared language is a hard deal-breaker if a posting requires it; a declared
+  language at a lower level than a posting wants is flagged, not auto-rejected. See
   04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Employed full-time (Software Engineer, Digipine Infotech LLP) and pursuing a part-time M.Tech in AI at IIT Jodhpur (2026-2028). Seeking full-time roles.
+- **LinkedIn headline:** "Full Stack & AI Engineer | M.Tech in AI, IIT Jodhpur" (taken from the CV header)
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **M.Tech in Artificial Intelligence** (2026-2028, in progress, part-time alongside work) - Indian Institute of Technology Jodhpur
+- **B.E. in Computer Engineering**, First Class with Distinction (graduated 2024) - LDRP Institute of Technology and Research
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+About 3 years including freelance.
+- **Software Engineer** (Sep 2024 - Present) - **Digipine Infotech LLP** (India)
+  - Promoted from Associate Software Engineer within 7 months after delivering 2 telephony products (Twilio, ElevenLabs, Kafka, Redis)
+  - Owns design and delivery of 3 production AI and messaging products, from first design to deployment on AWS and GCP
+  - Ran Agile sprints and weekly design reviews for two product tracks with three developers; both delivered on schedule for two quarters
+  - Cut onboarding for 2 interns from 2 weeks to 1 through code reviews and pair programming
+- **Full Stack Engineer (Contract)** (Jul 2023 - Aug 2024) - **Freelance, Self-Employed**
+  - Delivered 2 client projects on the agreed timelines (weekly client calls, sprint demos, written scope changes)
+  - Built and deployed 2 full stack AI products end to end (React, Node.js, NestJS, Docker, AWS EC2, NGINX)
+
+### Key Projects
+Employer attribution (Digipine vs freelance) is not recorded per project - do not assign one without asking Tirth.
+- **Omni-channel Communication Platform** (WhatsApp, SMS, Voice): Meta Embedded Signup onboarding cut from ~2 days to under 15 minutes; RAG accuracy ~65% to 80% on a 60-question test set; Kafka per-tenant routing at ~10K events/day
+- **AI Debt Recovery Platform**: human-in-the-loop LangGraph agent, case review time down ~40% across ~500 accounts/month
+- **A2P/10DLC Compliance Bot**: first-attempt approval ~60% to 75% across 20 pilot accounts; review time ~2 hours to 10 minutes
+- **Voice AI Agent for Lead Follow-up**: ~15% more missed leads reached, pre-qualification time down ~25%
+- **Bulk Call Forwarding Platform**: ~100 simultaneous calls, routing latency under 300 ms in load tests
+- **Real-time Football Coaching Platform (SaaS)**: Claude API + LangChain drill generation, planning time ~1 hour to 10 minutes; ~50 concurrent users synced under 500 ms
+- **AI Story and Image Sharing Mobile App (Backend)**: 150 concurrent users at p95 under 300 ms; ~500 stories/images per day
+- **void-snippets** (open source, creator and maintainer): ~200 weekly NPM downloads in 3 months
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** TypeScript, JavaScript, React, Node.js, NestJS; LangChain, LangGraph, RAG, vector search (ChromaDB), OpenAI API (function calling), Claude API, Gemini, prompt engineering, LLM evaluation; Apache Kafka, Redis, WebSocket/Socket.IO
+- **Secondary:** Python, FastAPI, Angular, SQL, PostgreSQL, MongoDB, Firebase, Kubernetes, GCP
+- **Domain:** LLM applications and agents, voice AI and telephony (Twilio, Telnyx, FreeSWITCH, ElevenLabs, Vapi, Retell AI), business messaging (WhatsApp Cloud API, Meta Embedded Signup, A2P/10DLC), event-driven microservices
+- **Software:** AWS (EC2, ECS, S3, Lambda), Docker, NGINX, GitHub Actions CI/CD, Git, RevenueCat, Jobber, Make, Zapier
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- None recorded
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- Solved 70+ data structures and algorithms problems on LeetCode (leetcode.com/u/shahtirthhh)
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+Inferred from the CV only - not yet confirmed by Tirth (see `02-behavioral-profile.md`).
+- **End-to-end owner** - takes products from first design to cloud deployment
+- **Measurement-driven** - baselines and test sets before claiming an improvement
+- **Strengths:** fast learning across stacks, clear client communication, mentoring
+- **Growth areas:** depth at large scale; model training / classical ML (M.Tech in progress)
+- **Thrives in:** small teams with real ownership, new product builds, direct user or client contact
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Building production AI / LLM products: RAG, agents, voice AI *(inferred from CV)*
+- Owning a product end to end across frontend, backend and cloud *(inferred from CV)*
 
-### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+### Target Roles and Sectors
+- **Roles (priority order):** AI / LLM Engineer; Full Stack Engineer; Backend Engineer / Developer; Solutions / Forward Deployed Engineer; Software Engineer; Frontend Developer
+- **Sectors:** AI-native startups and product companies; conversational AI, voice AI and CPaaS / business messaging; SaaS product companies. No specific target companies recorded.
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Roles outside India that offer no visa sponsorship or require existing work authorization / citizenship
+- Roles whose schedule or location makes the part-time M.Tech (2026-2028) impossible
+- No others recorded yet (salary floor, notice period, and work-mode preferences not recorded)
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

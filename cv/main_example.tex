@@ -1,8 +1,10 @@
-%% Example CV - [YOUR_NAME]
+%% Master CV - Tirth Shah
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
+%% Populated by /setup on 2026-10-04 from cv/shahtirthhh.tex.
+%% Master reference: holds everything, so it may run past 2 pages. Tailored CVs
+%% (cv/main_<company>_<role>.tex) cut from this down to exactly 2 pages.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -40,7 +42,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Tirth Shah - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -50,13 +52,13 @@
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Tirth}{Shah}
+% No \address line: no postal address is listed. (\address{}{}{} with empty
+% arguments fails on every moderncv version, so add a real one or leave it out.)
+\phone[mobile]{+91-9377461119}
+\email{shahtirth0212@gmail.com}
+% URLs printed as literal text so they survive in the PDF text layer an ATS reads.
+\extrainfo{\href{https://linkedin.com/in/shahtirthhh}{linkedin.com/in/shahtirthhh} | \href{https://github.com/shahtirthhh}{github.com/shahtirthhh} | \href{https://tirthcodes.dev}{tirthcodes.dev}}
 
 \begin{document}
 
@@ -67,7 +69,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Full stack and AI engineer with 3 years of experience (including freelance) building React and NestJS products, Kafka-based microservices, and LLM applications with RAG, LangChain, and LangGraph, deployed on AWS and GCP with Docker and Kubernetes. Promoted within 7 months at Digipine Infotech and has since owned design and delivery of 3 production AI and messaging products. Currently pursuing a part-time M.Tech in Artificial Intelligence at IIT Jodhpur alongside work.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -77,15 +79,19 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Languages}: TypeScript, JavaScript, Python, SQL.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Frontend}: React, Angular, TanStack Query, Socket.IO, REST APIs.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Backend}: NestJS, Node.js, FastAPI, WebSocket, Apache Kafka, Redis.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{AI \& LLM}: LangChain, LangGraph, RAG, Vector Search (ChromaDB), Embeddings, OpenAI API (Function Calling), Claude API, Google AI Studio (Gemini), Prompt Engineering, LLM Evaluation, ElevenLabs, Vapi, Retell AI.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Cloud \& DevOps}: AWS (EC2, ECS, S3, Lambda), GCP, Docker, Kubernetes, NGINX, GitHub Actions CI/CD, Git, Agile/Scrum.
+
+\item \textbf{Databases}: PostgreSQL, MongoDB, Redis, Firebase.
+
+\item \textbf{APIs \& Integrations}: Meta Business APIs (WhatsApp Cloud API, Embedded Signup, Webhooks), Twilio, Telnyx, FreeSWITCH APIs, RevenueCat, Jobber, Make, Zapier.
 
 \end{itemize}
 
@@ -97,34 +103,85 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Sep 2024 - Present}{Software Engineer}{Digipine Infotech LLP}{India}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item Promoted from Associate Software Engineer within 7 months, after delivering 2 telephony products with Twilio, ElevenLabs, Kafka, and Redis.
+    \item Own design and delivery of 3 production AI and messaging products, from first design to cloud deployment on AWS and GCP.
+    \item Delivered two product tracks on schedule for two quarters with three developers, by running Agile sprints and weekly design reviews.
+    \item Cut onboarding time for 2 interns from 2 weeks to 1, through structured code reviews and pair programming.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Jul 2023 - Aug 2024}{Full Stack Engineer (Contract)}{Freelance (Self-Employed)}{India}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item Delivered 2 client projects on the agreed timelines, by gathering requirements directly from clients on weekly calls, sharing a demo every sprint, and confirming scope changes in writing.
+    \item Built and deployed 2 full stack AI products end to end, using React, Node.js, NestJS, Docker, and AWS EC2 with NGINX.
 \end{itemize}}}
 
-\vspace{3pt}
+\end{itemize}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% ============================================================
+%     PROJECTS
+% ============================================================
+
+\section{Projects}
+\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-\end{itemize}}}
 
+\item \textbf{Omni-channel Communication Platform (WhatsApp, SMS, Voice)} -- \textit{React, Node.js, MongoDB, Kafka, LangChain, RAG, Vector Search, WhatsApp Cloud API, Twilio, Docker, AWS ECS}
+\begin{itemize}
+    \item Cut client onboarding from about 2 days of manual setup to under 15 minutes, by implementing Meta's Solution Partner onboarding flow (Embedded Signup, token exchange, webhook subscriptions) so each of 4 client admins connects their own WhatsApp number.
+    \item Raised answer accuracy from about 65\% to 80\% on a 60-question test set, by building a per-tenant knowledge base with LangChain, RAG, and vector search, and tuning chunk size, top-k, similarity threshold, and temperature.
+    \item Delivered messages in under 1 second at about 10K events per day with no cross-tenant data issues, by building a Kafka routing layer with per-tenant topics, containerized with Docker on AWS ECS.
+\end{itemize}
+
+\item \textbf{AI Debt Recovery Platform} -- \textit{React, FastAPI, LangGraph, ChromaDB, OpenAI, Docker, GCP}
+\begin{itemize}
+    \item Cut case review time by about 40\% across roughly 500 debt accounts per month, by building a human-in-the-loop AI agent with LangGraph, OpenAI function calling, and RAG over account history and recovery policies in ChromaDB, where staff approve suggested actions in a React dashboard.
+\end{itemize}
+
+\item \textbf{A2P/10DLC Compliance Bot} -- \textit{React, NestJS, LangChain, RAG, Vector Search, Google AI Studio APIs, Twilio, AWS EC2, NGINX}
+\begin{itemize}
+    \item Raised first-attempt registration approval from about 60\% to 75\% across 20 pilot accounts, by building a bot where users connect their Twilio account, have their website analyzed, and get a compliance report with fixes.
+    \item Cut compliance review from about 2 hours to 10 minutes per account, by combining LangChain RAG over carrier and messaging guidelines with Google AI Studio APIs, deployed on AWS EC2 behind NGINX.
+\end{itemize}
+
+\item \textbf{Voice AI Agent for Lead Follow-up} -- \textit{Twilio, ElevenLabs, NestJS, Redis, Docker, AWS EC2}
+\begin{itemize}
+    \item Reached about 15\% more previously missed leads and cut pre-qualification time by about 25\%, by building a voice AI agent on Twilio and ElevenLabs that calls back leads, collects their details, keeps call state in Redis, and hands qualified leads to a human agent.
+\end{itemize}
+
+\item \textbf{Bulk Call Forwarding Platform} -- \textit{FreeSWITCH APIs, Kafka, Redis, Angular, Docker, Kubernetes, AWS ECS, NGINX}
+\begin{itemize}
+    \item Handled about 100 simultaneous calls with routing latency under 300 ms in load tests, by integrating FreeSWITCH APIs with Kafka consumers for call events, Redis routing tables, and an Angular dashboard for operators.
+\end{itemize}
+
+\item \textbf{Real-time Football Coaching Platform (SaaS)} -- \textit{React, Node.js, Claude API, LangChain, Socket.IO, Docker, AWS EC2, NGINX}
+\begin{itemize}
+    \item Cut coach session planning time from about 1 hour to 10 minutes, by building a SaaS platform where coaches and clubs create training sessions for their players, with AI-generated animated drills from the Claude API and LangChain.
+    \item Kept session boards in sync for about 50 concurrent users with updates under 500 ms, by using Socket.IO on Node.js, containerized with Docker on AWS EC2 behind NGINX.
+\end{itemize}
+
+\item \textbf{AI Story and Image Sharing Mobile App (Backend)} -- \textit{NestJS, Kafka, Redis, OpenAI, Ideogram, RevenueCat, Docker, GitHub Actions}
+\begin{itemize}
+    \item Sustained 150 concurrent users at p95 response time under 300 ms in load tests, by building a NestJS backend with Kafka event streaming, Redis caching, and Docker deployments through GitHub Actions.
+    \item Generated about 500 personalized stories and images per day, by integrating OpenAI and Ideogram with dynamic prompts, and cut payment integration from 2 weeks to 4 days with reusable RevenueCat webhook handlers.
+\end{itemize}
+
+\end{itemize}
+
+% ============================================================
+%     OPEN SOURCE
+% ============================================================
+
+\section{Open Source}
+\vspace{1pt}
+\begin{itemize}
+\item \textbf{void-snippets (Creator \& Maintainer)} -- \textit{NPM Package, pnpm Monorepo, TypeScript, React, TanStack Query, Socket.IO}
+\begin{itemize}
+    \item Reached about 200 weekly NPM downloads in 3 months and saved about 1 hour of setup per feature across 3 internal codebases, by publishing a pnpm monorepo of typed HTTP, TanStack Query, and Socket.IO helpers.
+\end{itemize}
 \end{itemize}
 
 % ============================================================
@@ -135,14 +192,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{2026-2028}{M.Tech in Artificial Intelligence}{Indian Institute of Technology Jodhpur}{India}{}{\vspace{1pt}
+In progress (part-time, alongside full-time work), expected 2028.
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+% Only the graduation year is known; do not invent a start year.
+\item{\cventry{2024}{B.E. in Computer Engineering}{LDRP Institute of Technology and Research}{India}{}{\vspace{1pt}
+First Class with Distinction.
 }}
 
 \end{itemize}
@@ -154,27 +212,17 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
+\item English (fluent), Hindi (fluent), Gujarati (native).
 \end{itemize}
 
 % ============================================================
-%     PUBLICATIONS (optional)
+%     ACHIEVEMENTS
 % ============================================================
 
-\section{Publications}
+\section{Achievements}
 \vspace{1pt}
 \begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item Solved 70+ data structures and algorithms problems on LeetCode (\href{https://leetcode.com/u/shahtirthhh}{leetcode.com/u/shahtirthhh}).
 \end{itemize}
 
 % ============================================================

@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** TypeScript/JavaScript, React, Node.js, NestJS; LLM application engineering (LangChain, LangGraph, RAG, vector search with ChromaDB, OpenAI function calling, Claude API, Gemini, prompt engineering, LLM evaluation); Apache Kafka, Redis, WebSocket/Socket.IO; voice AI and telephony (Twilio, ElevenLabs, Vapi, Retell AI, FreeSWITCH); WhatsApp Cloud API / Meta Business APIs; Docker, AWS (EC2, ECS), NGINX, GitHub Actions
+**Moderate match areas:** Python and FastAPI, Angular, Kubernetes, GCP, AWS Lambda/S3, PostgreSQL, MongoDB, Firebase, SQL
+**Weak match areas:** ML model training and fine-tuning (PyTorch, TensorFlow), classical ML / data science, MLOps platforms, data engineering (Spark, Airflow), Java/Go/C#/Rust, native mobile (the mobile app work was backend only), large-scale distributed systems beyond the load-tested figures in the profile. The M.Tech in AI (2026-2028) is in progress - do not credit it as completed ML depth.
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Full stack product engineering on React + Node.js/NestJS; LLM / GenAI application engineering (RAG, agents); backend and event-driven microservices; voice AI, telephony and business-messaging integrations; client-facing delivery (freelance) - all at about 3 years total, so roles asking for up to roughly 2-4 years
+**Moderate:** Solutions / Forward Deployed Engineer, pure Frontend Developer (React-heavy), DevOps-leaning backend roles, tech lead of a small team
+**Entry-level:** ML Engineer / research roles needing model training, data science, data engineering, roles asking for 5+ years or formal people management
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,9 +91,11 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
+- Remote (India or international): PASS
+- On-site or hybrid anywhere in India: PASS (open to relocation)
+- Outside India with visa sponsorship / relocation support: PASS
+- Outside India with no sponsorship, or requiring existing work authorization: FAIL (see Eligibility Gate)
+- Schedule or location incompatible with the part-time M.Tech (IIT Jodhpur, 2026-2028): FLAG (discuss with user)
 - Frequent international travel: FLAG (discuss with user)
 
 ### 5. Career Alignment & Motivation (0-100)
@@ -107,19 +109,20 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Grow as an AI / LLM engineer building production GenAI products (RAG, agents, voice AI), backed by the M.Tech in AI
+- Keep full stack and backend breadth: React, Node.js/NestJS, event-driven systems
+- Move toward roles with more ownership and scale; open to client-facing Solutions / Forward Deployed work
+- Target titles, in priority order: AI / LLM Engineer, Full Stack Engineer, Backend Engineer/Developer, Solutions / Forward Deployed Engineer, Software Engineer, Frontend Developer
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: building new products end to end, LLM/agent features, integrations, real-time systems *(inferred from CV - confirm with Tirth)*
+- Tasks that drain: not recorded - ask Tirth
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: currently employed full-time, so there is no urgency - a move should be a clear step up. Salary baseline not recorded.
+- **Flexibility**: part-time M.Tech in AI at IIT Jodhpur (2026-2028) runs alongside work; the role must leave room for it
+- **Professional development**: deeper AI/ML engineering, larger-scale systems, stronger engineering peers
 
 ### 6. Salary Benchmark (Optional)
 

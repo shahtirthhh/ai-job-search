@@ -1,6 +1,6 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
+<!-- Populated by /setup on 2026-10-04. Re-run `/setup --section search` to change. -->
 
 ## Installed portal CLIs (primary for `/scrape`)
 
@@ -12,69 +12,98 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary:
+- **linkedin.com/jobs** - LinkedIn job listings (filter: India, plus Remote / Worldwide); covered by the `linkedin-search` CLI
+- **freehire** - covered by the `freehire-search` CLI
+- **naukri.com** - India's largest general job board (no CLI yet - scaffold one with `/add-portal`)
+- **wellfound.com** - startup roles, India and remote
+- **instahyre.com**, **cutshort.io**, **hirist.tech** - Indian tech-focused boards
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
+- ATS-hosted pages: `site:boards.greenhouse.io`, `site:jobs.lever.co`, `site:jobs.ashbyhq.com`
+
+The Danish demo portals (Jobindex, Jobbank, Jobdanmark, Jobnet) stay disabled - not Tirth's market.
 
 ## Query Categories
 
-Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with your location terms (e.g. your city, region, or metro area) where the site supports it.
+Queries are grouped by priority. All queries are in **English**: it is the working language of the Indian and international tech market, and Hindi/Gujarati postings for these roles are not a meaningful source. Location terms: `India`, `Remote`, and the hubs `Bengaluru`, `Hyderabad`, `Pune`, `Mumbai`, `Gurugram`, `Noida`, `Ahmedabad`.
 
-**Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
+**Organize by function, not job title.** The same underlying work carries different titles across companies, so each category lists several title variants.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+**Seniority:** about 3 years of experience. Prefer postings asking for 1-5 years; skip Senior Staff / Principal / 8+ years and unpaid internships.
 
-These match your strongest and most desired career direction.
+### Priority 1: AI / LLM application engineering
 
-```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+Building production GenAI products: RAG, agents, voice AI.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs "AI Engineer" LangChain India
+site:linkedin.com/jobs "Generative AI Engineer" India
+site:linkedin.com/jobs "LLM Engineer" OR "Applied AI Engineer" India OR Remote
+site:naukri.com "Generative AI Engineer" RAG LangChain
+site:naukri.com "AI Engineer" LangGraph OR "AI agents"
+site:wellfound.com "AI Engineer" RAG remote
+site:instahyre.com "AI Engineer" LLM
+site:jobs.ashbyhq.com OR site:boards.greenhouse.io "AI Engineer" LangChain remote India
+"Voice AI Engineer" Twilio OR ElevenLabs OR Vapi OR "Retell" remote
+"Full Stack AI Engineer" React "LLM" India OR Remote
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 2: Full stack and backend product engineering
 
-Adjacent roles you could pivot into.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
-```
-
-### Priority 4: Broader Technical / Consulting
-
-Wider net for general technical roles.
+React + Node.js/NestJS products, event-driven backends.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "Full Stack Engineer" React NestJS India
+site:linkedin.com/jobs "Software Engineer" TypeScript Node.js India
+site:linkedin.com/jobs "Backend Engineer" Node.js Kafka India
+site:naukri.com "Full Stack Developer" React Node.js NestJS
+site:naukri.com "Backend Developer" NestJS Kafka Redis
+site:naukri.com "Software Engineer" TypeScript React "Node.js"
+site:wellfound.com "Full Stack Engineer" TypeScript remote
+site:cutshort.io "Backend Developer" Node.js Kafka
+site:hirist.tech "Full Stack Developer" React NestJS
+"Backend Engineer" FastAPI OR NestJS Kafka remote India
+```
+
+### Priority 3: Solutions / Forward Deployed / integrations
+
+Client-facing engineering, using the freelance and integrations background (WhatsApp Cloud API, Twilio, telephony).
+
+```
+site:linkedin.com/jobs "Forward Deployed Engineer" India OR Remote
+site:linkedin.com/jobs "Solutions Engineer" AI OR LLM India
+site:linkedin.com/jobs "AI Solutions Engineer" OR "AI Integration Engineer" India OR Remote
+site:wellfound.com "Forward Deployed Engineer" AI
+"Solutions Engineer" "WhatsApp" OR "Twilio" OR "conversational AI" India
+"Integration Engineer" "WhatsApp Business API" OR "CPaaS" India
+site:naukri.com "Solutions Engineer" "Generative AI"
+```
+
+### Priority 4: Broader software and frontend roles
+
+Wider net.
+
+```
+site:linkedin.com/jobs "Frontend Developer" React TypeScript India
+site:naukri.com "Frontend Developer" React "TanStack" OR "TypeScript"
+site:naukri.com "React Developer" TypeScript
+site:linkedin.com/jobs "Software Engineer" "visa sponsorship" OR "relocation" TypeScript
+site:linkedin.com/jobs "Software Engineer" Node.js React Remote
+"Software Development Engineer" SDE-2 OR "SDE 2" Node.js India
+"Founding Engineer" TypeScript AI remote
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+Tirth is open to relocation within India and abroad, so location is rarely a veto:
+- **Ideal:** fully remote (India or international), or major Indian tech hubs (Bengaluru, Hyderabad, Pune, Mumbai, Gurugram/Noida, Ahmedabad/Gandhinagar)
+- **Acceptable:** any other city in India
+- **Acceptable with sponsorship:** outside India where the posting offers visa sponsorship or relocation support
+- **Borderline:** outside India where sponsorship is not mentioned - include but flag "sponsorship unverified"
+- **Exclude:** outside India where the posting requires existing work authorization, citizenship, permanent residency or a security clearance (see `04-job-evaluation.md`'s Eligibility Gate)
+- **Flag:** any role whose hours or location would conflict with the part-time M.Tech at IIT Jodhpur (2026-2028)
 
 ## Language Filter
 

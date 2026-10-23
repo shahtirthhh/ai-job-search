@@ -59,7 +59,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Tirth Shah - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -69,13 +69,16 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Tirth}{Shah}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+% (no \address line: Tirth lists no postal address. Add \address{City, India}{}{} only
+% if a posting calls for it.)
+\phone[mobile]{+91-9377461119}
+\email{shahtirth0212@gmail.com}
+% URLs are printed as literal text (not "LinkedIn"/"GitHub" link labels) so they
+% survive in the PDF text layer that an ATS reads.
+\extrainfo{\href{https://linkedin.com/in/shahtirthhh}{linkedin.com/in/shahtirthhh} | \href{https://github.com/shahtirthhh}{github.com/shahtirthhh} | \href{https://tirthcodes.dev}{tirthcodes.dev}}
 
 \begin{document}
 \makecvtitle
@@ -136,12 +139,20 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For AI / LLM Engineer roles:**
+> AI engineer with 3 years of experience (including freelance) shipping LLM applications to production: RAG pipelines, human-in-the-loop agents with LangGraph and OpenAI function calling, and voice AI agents on Twilio and ElevenLabs. Builds the whole product around the model, from React front ends to NestJS and FastAPI services on AWS and GCP, and tunes retrieval against test sets rather than by feel. Currently pursuing a part-time M.Tech in Artificial Intelligence at IIT Jodhpur alongside work.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Full Stack Engineer / Software Engineer roles:**
+> Full stack engineer with 3 years of experience (including freelance) building React and NestJS products end to end, from first design to cloud deployment on AWS and GCP with Docker. Promoted within 7 months at Digipine Infotech and has since owned design and delivery of 3 production AI and messaging products. Comfortable across the stack: TypeScript front ends, Node.js and FastAPI services, Kafka and Redis, and LLM features with LangChain and RAG.
+
+**For Backend Engineer / Developer roles:**
+> Backend engineer with 3 years of experience (including freelance) building NestJS, Node.js and FastAPI services, Kafka-based event-driven microservices, and Redis-backed real-time systems. Has delivered multi-tenant message routing at about 10K events per day and services load-tested at p95 under 300 ms, containerized with Docker and deployed on AWS ECS and EC2 through GitHub Actions.
+
+**For Solutions / Forward Deployed Engineer roles:**
+> Engineer with 3 years of experience (including a year of freelance client work) turning customer requirements into shipped AI products. Gathers requirements directly on client calls, demos every sprint, and builds the integration end to end: WhatsApp Cloud API and Meta Embedded Signup, Twilio, RAG knowledge bases with LangChain, and deployment on AWS. Cut one client onboarding flow from about 2 days to under 15 minutes.
+
+**For Frontend Developer roles:**
+> Frontend-leaning full stack engineer with 3 years of experience (including freelance) building React and Angular applications in TypeScript, with TanStack Query and real-time Socket.IO interfaces. Creator and maintainer of void-snippets, an open-source NPM package of typed HTTP, TanStack Query and Socket.IO helpers. Understands the backend the UI talks to, having built the NestJS and Node.js services behind it.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 
