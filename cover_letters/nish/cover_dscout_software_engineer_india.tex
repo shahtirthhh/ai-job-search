@@ -1,0 +1,41 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cover Letter - Dscout, Software Engineer - India (nish mode: Nishchal Namdeo)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{cover}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{Page \thepage \hspace{0pt}}
+\thispagestyle{empty}
+\renewcommand{\headrulewidth}{0pt}
+\begin{document}
+
+\namesection{}{\Huge{Nishchal Namdeo}}{  \href{mailto:nishchal04namdeo@gmail.com}{nishchal04namdeo@gmail.com} | +91-8269896928 |  \urlstyle{same}\href{https://www.linkedin.com/in/nishchal-namdeo-010429253/}{LinkedIn} | \href{https://github.com/NishchalNamdeo}{GitHub} | \href{https://nishchal-portfolio-jet.vercel.app/}{Portfolio}
+}
+
+\currentdate{\today}
+\lettercontent{Dear Hiring Manager,}
+
+\lettercontent{I am applying for the Software Engineer role on Dscout's India team. I ship full stack product features in React, TypeScript, Node.js, and MongoDB, and I have built LLM features where the hard part was designing around output that does not behave the same way twice.}
+
+\lettercontent{Dscout's research platform is moving AI into the core of how teams run and analyse studies. Making that behaviour understandable and trustworthy in the product is the work I want to do. What I bring:}
+
+{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont
+\begin{itemize}
+    \item \textbf{LLM features in production:} built 5 AI features (emotion analysis, opportunity matching, ATS scoring, and more) as REST endpoints on the OpenAI API with structured prompts.
+    \item \textbf{Designing for non-determinism:} validated model output against a JSON schema with one retry, cutting malformed responses from about 8\% to under 2\%, and halved response time with Redis caching and smaller prompts.
+    \item \textbf{Product surfaces:} built a React analytics dashboard that cut client admins' weekly reporting from about 3 hours to 20 minutes, and a Socket.IO chat module with replies in under 1 second.
+    \item \textbf{Full stack ownership:} built Node.js, Express, and MongoDB backends for 5 client sites, and tenant-scoped role-based access control for a multi-tenant messaging platform.
+\end{itemize}\par}
+\vspace{6pt}
+
+\lettercontent{I like taking a loosely defined problem, agreeing the contract with the people around me, and shipping something real users can react to. I would bring that habit to Dscout's AI-native product work.}
+
+\lettercontent{I look forward to hearing from you.}
+
+\begin{flushright}
+\closing{Kind regards,}
+
+\signature{Nishchal Namdeo}
+\end{flushright}
+\end{document}
