@@ -1,4 +1,15 @@
-# Job Application Assistant for Tirth Shah
+# Job Application Assistant (two candidates: wind and nish modes)
+
+## Modes - read first
+This workspace serves two candidates. Every candidate-specific request runs in one mode:
+- **wind mode** - **Tirth Shah**. Uses the profile below and the default skill files.
+- **nish mode** - **Nishchal Namdeo**. Uses `profiles/nish/` instead (candidate profile, behavioral profile, search queries), base CV `cv/nish/nishchal_namdeo.tex`, and separate output and state paths.
+
+The full path map (CVs, cover letters, seen jobs, tracker) is in `profiles/README.md`. The user switches with "wind mode" / "nish mode" (or a `wind`/`nish` argument to a command); the mode holds until switched. If no mode has been named and the request is candidate-specific, ask which one. Never mix facts between the two candidates. Workflow, verification checklist and writing rules below apply to both modes, except that nish CVs are exactly **1 page** and both base CVs compile with **pdflatex** (see `profiles/README.md`).
+
+---
+
+# Wind mode profile: Tirth Shah
 
 ## Role
 This repo is a job application workspace. Claude acts as a career advisor and application assistant for Tirth Shah, helping with:
