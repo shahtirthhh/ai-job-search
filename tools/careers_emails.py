@@ -19,12 +19,16 @@ Usage:
       --out job_scraper/nish/hr_contacts.csv [--limit 50] [--delay 2]
 """
 
-import argparse, csv, html, re, subprocess, sys, time
+import argparse, csv, functools, html, re, subprocess, sys, time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import robots_check
+
+# robots.txt is read once per host, not once per page
+robots_check._fetch = functools.lru_cache(maxsize=None)(robots_check._fetch)
 
 UA = 'Mozilla/5.0 (compatible; careers-email-lookup; personal job search)'
 PATHS = ['/careers', '/jobs', '/careers/', '/join-us', '/work-with-us', '/contact', '/about']
@@ -111,19 +115,19 @@ def main():
     ap.add_argument('--out', required=True)
     ap.add_argument('--limit', type=int, default=0)
     ap.add_argument('--delay', type=float, default=2.0)
+    ap.add_argument('--workers', type=int, default=8, help='companies fetched in parallel (one request at a time per company)')
     a = ap.parse_args()
     rows = list(csv.DictReader(open(a.companies, encoding='utf-8')))
     rows = rows[:a.limit] if a.limit else rows
     with open(a.out, 'w', newline='', encoding='utf-8') as f:
         w = csv.writer(f)
         w.writerow(['company', 'site', 'email', 'found_on'])
-        for i, row in enumerate(rows, 1):
-            host, hits = run(row, a.delay)
-            for e, u in dict.fromkeys(hits):
-                w.writerow([row['company'], host, e, u])
-            f.flush()
-            print(f"[{i}/{len(rows)}] {row['company']}: {host or 'site not found'}, {len(set(hits))} address(es)")
-
+        with ThreadPoolExecutor(a.workers) as ex:
+            for i, (row, (host, hits)) in enumerate(zip(rows, ex.map(lambda r: run(r, a.delay), rows)), 1):
+                for e, u in dict.fromkeys(hits):
+                    w.writerow([row['company'], host, e, u])
+                f.flush()
+                print(f"[{i}/{len(rows)}] {row['company']}: {host or 'site not found'}, {len(set(hits))} address(es)")
 
 if __name__ == '__main__':
     main()
