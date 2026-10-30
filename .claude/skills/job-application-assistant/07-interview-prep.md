@@ -39,7 +39,7 @@ the CV says; items marked [ADD: ...] need Tirth's own detail before use in an in
 **Use for:** "Design an AI agent", "How do you make AI safe in a sensitive domain?", "A product you owned end to end"
 
 ### 4. Promotion and team delivery at Digipine (ownership, leadership)
-**S:** Joined Digipine Infotech as Associate Software Engineer in Sep 2024.
+**S:** Joined Digipine Infotech as Associate Software Engineer in Sep 2023.
 **T:** Deliver 2 telephony products (Twilio, ElevenLabs, Kafka, Redis), then take ownership of larger work.
 **A:** Delivered both, was promoted to Software Engineer within 7 months, then ran Agile sprints and weekly design reviews for two product tracks with three developers, and onboarded 2 interns through structured code reviews and pair programming.
 **R:** Both tracks delivered on schedule for two quarters; intern onboarding cut from 2 weeks to 1; owned 3 production AI and messaging products from design to deployment.

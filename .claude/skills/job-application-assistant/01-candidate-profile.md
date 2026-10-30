@@ -38,7 +38,8 @@ framework_version: 1.1.1
 
 Total: about 3 years including freelance (Jul 2023 - present).
 
-### Software Engineer - Digipine Infotech LLP (Sep 2024 - Present)
+### Software Engineer - Digipine Infotech LLP (Sep 2023 - Present)
+<!-- Start date corrected from Sep 2024 to Sep 2023 on 2026-10-30: Tirth confirmed he joined in Sep 2023. The freelance entry below (Jul 2023 - Aug 2024) now overlaps it; Tirth to confirm those dates before it is used on a CV. -->
 India (office city not recorded)
 - Joined as Associate Software Engineer; promoted to Software Engineer within 7 months after delivering 2 telephony products with Twilio, ElevenLabs, Kafka, and Redis.
 - Went on to own design and delivery of 3 production AI and messaging products, from first design to cloud deployment on AWS and GCP.

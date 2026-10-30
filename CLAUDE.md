@@ -47,7 +47,7 @@ Full detail lives in `.claude/skills/job-application-assistant/01-candidate-prof
 
 ### Professional Experience
 About 3 years including freelance.
-- **Software Engineer** (Sep 2024 - Present) - **Digipine Infotech LLP** (India)
+- **Software Engineer** (Sep 2023 - Present; start date confirmed by Tirth) - **Digipine Infotech LLP** (India)
   - Promoted from Associate Software Engineer within 7 months after delivering 2 telephony products (Twilio, ElevenLabs, Kafka, Redis)
   - Owns design and delivery of 3 production AI and messaging products, from first design to deployment on AWS and GCP
   - Ran Agile sprints and weekly design reviews for two product tracks with three developers; both delivered on schedule for two quarters
