@@ -82,9 +82,10 @@ cover letter until Tirth confirms the mapping. -->
 ## Technical Skills
 
 ### Programming & AI
-- **Languages:** TypeScript, JavaScript, Python, SQL
-- **Frontend:** React, Angular, TanStack Query, Socket.IO, REST APIs
-- **Backend:** NestJS, Node.js, FastAPI, WebSocket, Apache Kafka, Redis
+- **Languages:** TypeScript, JavaScript, Java, Python, SQL
+<!-- Vue 3 (Composition API), Java and Spring Boot added 2026-10-30 on Tirth's word that he has used them. No project or employer is recorded for them, so do not write a project bullet or metric for them until Tirth supplies one. Pinia, Vitest and JUnit were NOT confirmed. -->
+- **Frontend:** React, Vue 3 (Composition API), Angular, TanStack Query, Socket.IO, REST APIs
+- **Backend:** Spring Boot, NestJS, Node.js, FastAPI, WebSocket, Apache Kafka, Redis
 - **AI & LLM:** LangChain, LangGraph, RAG, Vector Search (ChromaDB), Embeddings, OpenAI API (Function Calling), Claude API, Google AI Studio (Gemini), Prompt Engineering, LLM Evaluation, ElevenLabs, Vapi, Retell AI
 - **Databases:** PostgreSQL, MongoDB, Redis, Firebase
 

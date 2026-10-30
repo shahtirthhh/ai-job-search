@@ -69,7 +69,7 @@ Employer attribution (Digipine vs freelance) is not recorded per project - do no
 
 ### Technical Skills
 - **Primary:** TypeScript, JavaScript, React, Node.js, NestJS; LangChain, LangGraph, RAG, vector search (ChromaDB), OpenAI API (function calling), Claude API, Gemini, prompt engineering, LLM evaluation; Apache Kafka, Redis, WebSocket/Socket.IO
-- **Secondary:** Python, FastAPI, Angular, SQL, PostgreSQL, MongoDB, Firebase, Kubernetes, GCP
+- **Secondary:** Python, FastAPI, Angular, Vue 3 (Composition API), Java, Spring Boot (confirmed by Tirth; no project recorded), SQL, PostgreSQL, MongoDB, Firebase, Kubernetes, GCP
 - **Domain:** LLM applications and agents, voice AI and telephony (Twilio, Telnyx, FreeSWITCH, ElevenLabs, Vapi, Retell AI), business messaging (WhatsApp Cloud API, Meta Embedded Signup, A2P/10DLC), event-driven microservices
 - **Software:** AWS (EC2, ECS, S3, Lambda), Docker, NGINX, GitHub Actions CI/CD, Git, RevenueCat, Jobber, Make, Zapier
 
